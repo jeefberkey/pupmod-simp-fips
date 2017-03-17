@@ -5,12 +5,12 @@ test_name 'fips'
 describe 'fips' do
   let(:manifest) {
     <<-EOS
-      class { '::fips': }
+      class { 'fips': }
     EOS
   }
   let(:disable_manifest) {
     <<-EOS
-      class { '::fips':
+      class { 'fips':
         enabled => false
       }
     EOS
